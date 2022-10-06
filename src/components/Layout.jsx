@@ -1,6 +1,8 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 
 export const Layout = () => {
+  const location = useLocation();
+  console.log(location);
   return (
     <div className="md:flex md:min-h-screen">
       <aside className="md:w-1/4 bg-blue-900 px-5 py-10">
@@ -9,13 +11,19 @@ export const Layout = () => {
         </h2>
         <nav className="mt-10">
           <Link
-            className="text-2xl block hover:text-blue-300 text-white"
+            className={`${
+              location.pathname === "/" ? "text-blue-300" : "text-white"
+            } text-2xl block hover:text-blue-300 text-white`}
             to="/"
           >
             Clientes
           </Link>
           <Link
-            className="text-2xl block hover:text-blue-300 text-white"
+            className={`${
+              location.pathname === "/clientes/nuevo"
+                ? "text-blue-300"
+                : "text-white"
+            } text-2xl block hover:text-blue-300 text-white`}
             to="/clientes/nuevo"
           >
             Nuevos
