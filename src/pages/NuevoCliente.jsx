@@ -14,6 +14,12 @@ export async function action({ request }) {
     errores.push("Todos los campos son obligatorios");
   }
 
+  let regex = new RegExp(
+    "([!#-'*+/-9=?A-Z^-~-]+(.[!#-'*+/-9=?A-Z^-~-]+)*|\"([]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(.[!#-'*+/-9=?A-Z^-~-]+)*|[[\t -Z^-~]*])"
+  );
+  if (!regex.test(email)) {
+    errores.push("El Email no es válido");
+  }
   //Retornar datos si hay errores
 
   if (Object.values(errores).length) {
@@ -41,7 +47,7 @@ export const NuevoCliente = () => {
       <div className="bg-white shadow rounded-md md:w-3/4 mx-auto px-5 py-10 mt-20">
         {errores?.length &&
           errores.map((error, i) => <Error key={i}>{error}</Error>)}
-        <Form method="post" action="">
+        <Form noValidate method="post" action="">
           <Formulario />
           <input
             type="submit"
