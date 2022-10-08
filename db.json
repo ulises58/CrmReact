@@ -1,59 +1,6 @@
 {
   "clientes": [
     {
-      "nombre": "Juan Actulida",
-      "empresa": "Codigo Con Juan",
-      "email": "juan@juan.com",
-      "telefono": "102013313",
-      "notas": "joto el que lo lea",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "nombre": "Karen",
-      "telefono": 138198313,
-      "email": "karen@juan.com",
-      "empresa": "Codigo Con Juan"
-    },
-    {
-      "id": 3,
-      "nombre": "Josue",
-      "telefono": 31983913,
-      "email": "josue@juan.com",
-      "empresa": "Codigo Con Juan"
-    },
-    {
-      "id": 4,
-      "nombre": "Miguel",
-      "telefono": 319381983,
-      "email": "miguel@juan.com",
-      "empresa": "Codigo Con Juan"
-    },
-    {
-      "nombre": "Pedro actulizado",
-      "empresa": "Codigo Con Juan",
-      "email": "pedro@juan.com",
-      "telefono": "1398198938",
-      "notas": "jojojojojoj",
-      "id": 5
-    },
-    {
-      "nombre": "Ulises",
-      "empresa": "f11",
-      "email": "sandorodri1@gmail.com",
-      "telefono": "6645841970",
-      "notas": "dfgdfgdf",
-      "id": 6
-    },
-    {
-      "nombre": "Ulises 2",
-      "empresa": "f11",
-      "email": "sandorodri1@gmail.com",
-      "telefono": "6645841970",
-      "notas": "sdfsdfsd",
-      "id": 7
-    },
-    {
       "nombre": "Ulises",
       "empresa": "f11",
       "email": "sandorodri1@gmail.com",
