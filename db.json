@@ -1,11 +1,12 @@
 {
   "clientes": [
     {
-      "id": 1,
-      "nombre": "Juan",
-      "telefono": 102013313,
+      "nombre": "Juan Actulida",
+      "empresa": "Codigo Con Juan",
       "email": "juan@juan.com",
-      "empresa": "Codigo Con Juan"
+      "telefono": "102013313",
+      "notas": "joto el que lo lea",
+      "id": 1
     },
     {
       "id": 2,
@@ -29,11 +30,12 @@
       "empresa": "Codigo Con Juan"
     },
     {
-      "id": 5,
-      "nombre": "Pedro",
-      "telefono": 1398198938,
+      "nombre": "Pedro actulizado",
+      "empresa": "Codigo Con Juan",
       "email": "pedro@juan.com",
-      "empresa": "Codigo Con Juan"
+      "telefono": "1398198938",
+      "notas": "jojojojojoj",
+      "id": 5
     },
     {
       "nombre": "Ulises",
@@ -50,6 +52,14 @@
       "telefono": "6645841970",
       "notas": "sdfsdfsd",
       "id": 7
+    },
+    {
+      "nombre": "Ulises",
+      "empresa": "f11",
+      "email": "sandorodri1@gmail.com",
+      "telefono": "6645841970",
+      "notas": "gdfg",
+      "id": 8
     }
   ]
 }

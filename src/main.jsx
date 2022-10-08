@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import {
   EditarCliente,
   loader as editarClienteLoader,
+  action as editarClienteAction,
 } from "./pages/EditarCliente";
 
 import { Layout } from "./components/Layout";
@@ -35,6 +36,7 @@ const router = createBrowserRouter([
         path: "/clientes/:clienteId/editar",
         element: <EditarCliente />,
         loader: editarClienteLoader,
+        action: editarClienteAction,
         errorElement: <ErrorPage />,
       },
     ],
