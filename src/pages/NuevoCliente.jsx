@@ -1,14 +1,15 @@
-import { useNavigate, useActionData } from "react-router-dom";
+import { useNavigate, useActionData, redirect } from "react-router-dom";
 import { Form } from "react-router-dom";
 import Formulario from "../components/Formulario";
 import { Error } from "../components/Error";
+import { agregarCliente } from "../data/clientes";
 
 export async function action({ request }) {
   const formData = await request.formData();
-
   const datos = Object.fromEntries(formData);
+  const email = formData.get("email");
 
-  // Validacion
+  // Validación
   const errores = [];
   if (Object.values(datos).includes("")) {
     errores.push("Todos los campos son obligatorios");
@@ -20,11 +21,13 @@ export async function action({ request }) {
   if (!regex.test(email)) {
     errores.push("El Email no es válido");
   }
-  //Retornar datos si hay errores
 
-  if (Object.values(errores).length) {
+  // Retornar datos si hay errores
+  if (Object.keys(errores).length) {
     return errores;
   }
+  await agregarCliente(datos);
+  return redirect("/");
 }
 
 export const NuevoCliente = () => {
